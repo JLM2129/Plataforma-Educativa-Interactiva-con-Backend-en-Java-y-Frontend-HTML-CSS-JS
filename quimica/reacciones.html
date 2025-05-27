@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reacciones Químicas y Ácidos y Bases</title>
+  <link rel="stylesheet" href="/global.css" />
+</head>
+<body>
+    <section class="tema">
+        <div class="logo"><img src="/logo.jpg" alt="Logo"></div>
+        <div class="titulo-seccion">
+            <h2>🧫 Reacciones Químicas</h2>
+            <p>Observa cómo ocurren las reacciones, los productos y los tipos más comunes.</p>
+        </div>
+        <div class="contenedor-contenido">
+            <div class="bloque">
+                <h3>🎥 Video: Reacciones Químicas</h3>
+                <div class="video-responsive">
+                  <iframe src="https://www.youtube.com/embed/IbW7vhzG3O8" title="Átomos y moléculas" allowfullscreen></iframe>
+                </div>
+                <button onclick="accesoDenegado()">Ver más videos</button>
+            </div>
+              <div class="bloque">
+                <h3>✍️ Ejercicio: Reacciones Químicas</h3>
+                <p id="pregunta-reaccion"></p>
+                <input type="text" id="respuesta-reaccion" placeholder="Escribe tu respuesta aquí" />
+                <button onclick="verificarRespuestaReaccion()">Enviar</button>
+                <p id="feedback-reaccion"></p>
+              </div>
+           <div class="bloque">
+               <h3>🎮 Juego: Clasifica la reacción</h3>
+               <p>Selecciona el tipo correcto de cada reacción química:</p>
+              <div id="juego-reacciones"></div>
+           </div>
+
+           <div class="bloque">
+            <h3>📚 PDF: Reacciones Químicas</h3>
+
+            <a href="pdfs/atomos-moleculas.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+            <button onclick="accesoDenegado()">Ver más guías</button>
+          </div>
+
+        </div>
+    </section>
+  
+
+  <section class="tema">
+    <div class="titulo-seccion">
+
+      <h2 id="acidos">💧 Ácidos y Bases</h2>
+      <p>Aprende qué los diferencia, cómo se identifican y sus usos cotidianos.</p>
+    </div>
+    <div class="contenedor-contenido">
+    <div class="bloque">
+        <h3>🎥 Video: Ácidos y Bases</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/IbW7vhzG3O8" title="Átomos y moléculas" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+    </div>
+    <div class="bloque">
+        <h3>✍️ Ejercicio: Ácidos y Bases</h3>
+        <p id="pregunta-acido"></p>
+        <input type="text" id="respuesta-acido" placeholder="Escribe tu respuesta aquí" />
+        <button onclick="verificarRespuestaAcido()">Enviar</button>
+        <p id="feedback-acido"></p>
+    </div>
+    <div class="bloque">
+        <h3>🎮 Juego: ¿Ácido o Base?</h3>
+        <p>Arrastra cada sustancia al grupo correcto:</p>
+        <div id="juego-acido-base"></div>
+    </div>
+    <div class="bloque">
+        <h3>📚 PDF:Ácido y Bases</h3>
+
+        <a href="pdfs/atomos-moleculas.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+        <button onclick="accesoDenegado()">Ver más guías</button>
+      </div>
+</div>
+  </section>
+
+  <script src="/js/reacciones.js"></script>
+</body>
+</html>

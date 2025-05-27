@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienvenido a Ciencia Loca</title>
+  <link rel="stylesheet" href="/usuario.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="/logo.jpg" alt="Logo"></div>
+    <nav>
+      <a href="#matematicas">Matemáticas Locas</a>
+      <a href="#fisica">Física en Acción</a>
+      <a href="#quimica">Química Divertida</a>
+      <a href="#">Progreso</a>
+      <a href="#">Configuración</a>
+      <a href="/index.html">Cerrar sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- MATEMÁTICAS -->
+    <section id="matematicas">
+      <h2><a href="#matematicas">🔢 Matemáticas Locas</a></h2>
+
+      <div class="carrusel">
+        <div class="tarjeta tema"  data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/matematicas.png');">
+        <div class="titulo-tema">Matemáticas Básicas</div>
+        </div>
+
+       <div class="subtarjetas">
+        <div class="contenedor-scroll">
+  <div class="tarjeta subtema" subtema-id = "1" onclick="irASubtema(this)">Conteo hacia adelante y hacia atrás</div>
+  <div class="tarjeta subtema" subtema-id="2" onclick="irASubtema(this)">Números naturales hasta 100</div>
+  <div class="tarjeta subtema" subtema-id="3" onclick="irASubtema(this)">Números ordinales y cardinales</div>
+  <div class="tarjeta subtema" subtema-id="4" onclick="irASubtema(this)">Comparación de números (mayor, menor, igual)</div>
+  <div class="tarjeta subtema" subtema-id="5" onclick="irASubtema(this)">Valor posicional (unidades y decenas)</div>
+  <div class="tarjeta subtema" subtema-id="6" onclick="irASubtema(this)">Sumas y restas sencillas (sin llevar)</div>
+  <div class="tarjeta subtema" subtema-id="7" onclick="irASubtema(this)">Introducción al dinero</div>
+  <div class="tarjeta subtema" subtema-id="8" onclick="irASubtema(this)">Lectura de la hora en punto y media hora</div>
+
+  <div class="tarjeta subtema"subtema-id = "9" onclick="irASubtema(this)">Números naturales hasta 1,000</div>
+  <div class="tarjeta subtema"subtema-id = "10" onclick="irASubtema(this)">Valor posicional (centenas)</div>
+  <div class="tarjeta subtema"subtema-id = "11" onclick="irASubtema(this)">Sumas y restas con llevadas</div>
+  <div class="tarjeta subtema"subtema-id = "12" onclick="irASubtema(this)">Números pares e impares</div>
+  <div class="tarjeta subtema"subtema-id = "13" onclick="irASubtema(this)">Series y secuencias numéricas</div>
+  <div class="tarjeta subtema"subtema-id = "14" onclick="irASubtema(this)">Uso de la recta numérica</div>
+  <div class="tarjeta subtema"subtema-id = "15" onclick="irASubtema(this)">Tablas de multiplicar del 1 al 5</div>
+  <div class="tarjeta subtema"subtema-id = "16" onclick="irASubtema(this)">Medición de longitud y peso</div>
+  <div class="tarjeta subtema"subtema-id = "17" onclick="irASubtema(this)">Dinero: sumas y restas con monedas y billetes</div>
+  <div class="tarjeta subtema"subtema-id = "18" onclick="irASubtema(this)">Medición del tiempo (cuartos y tres cuartos de hora)</div>
+
+  <div class="tarjeta subtema"subtema-id = "19" onclick="irASubtema(this)">Números hasta 10,000</div>
+  <div class="tarjeta subtema"subtema-id = "20" onclick="irASubtema(this)">Multiplicación y división básicas</div>
+  <div class="tarjeta subtema"subtema-id = "21" onclick="irASubtema(this)">Tablas de multiplicar del 6 al 10</div>
+  <div class="tarjeta subtema"subtema-id = "22" onclick="irASubtema(this)">Problemas con operaciones básicas</div>
+  <div class="tarjeta subtema"subtema-id = "23" onclick="irASubtema(this)">Introducción a las fracciones</div>
+  <div class="tarjeta subtema"subtema-id = "24" onclick="irASubtema(this)">Lectura y escritura de fracciones simples</div>
+  <div class="tarjeta subtema"subtema-id = "25" onclick="irASubtema(this)">Estimaciones simples</div>
+  <div class="tarjeta subtema"subtema-id = "26" onclick="irASubtema(this)">Redondeo a la decena más cercana</div>
+  <div class="tarjeta subtema"subtema-id = "27" onclick="irASubtema(this)">Medición de capacidad</div>
+
+  <div class="tarjeta subtema"subtema-id = "28" onclick="irASubtema(this)">Números hasta 100,000</div>
+  <div class="tarjeta subtema"subtema-id = "28" onclick="irASubtema(this)">Operaciones combinadas</div>
+  <div class="tarjeta subtema"subtema-id = "30" onclick="irASubtema(this)">División con y sin residuo</div>
+  <div class="tarjeta subtema"subtema-id = "31" onclick="irASubtema(this)">Fracciones equivalentes</div>
+  <div class="tarjeta subtema"subtema-id = "32" onclick="irASubtema(this)">Problemas con fracciones</div>
+  <div class="tarjeta subtema"subtema-id = "33" onclick="irASubtema(this)">Redondeo a centenas y millares</div>
+  <div class="tarjeta subtema"subtema-id = "34" onclick="irASubtema(this)">Uso del reloj: 24 horas</div>
+  <div class="tarjeta subtema"subtema-id = "35" onclick="irASubtema(this)">Introducción a múltiplos y divisores</div>
+  <div class="tarjeta subtema"subtema-id = "36" onclick="irASubtema(this)">Interpretación de datos en tablas y gráficos simples</div>
+
+  <div class="tarjeta subtema"subtema-id = "37" onclick="irASubtema(this)">Números hasta 1 millón</div>
+  <div class="tarjeta subtema"subtema-id = "38" onclick="irASubtema(this)">Operaciones con decimales</div>
+  <div class="tarjeta subtema"subtema-id = "39" onclick="irASubtema(this)">Comparación de fracciones y decimales</div>
+  <div class="tarjeta subtema"subtema-id = "40" onclick="irASubtema(this)">Redondeo de decimales</div>
+  <div class="tarjeta subtema"subtema-id = "41" onclick="irASubtema(this)">Problemas con decimales y fracciones</div>
+  <div class="tarjeta subtema"subtema-id = "42" onclick="irASubtema(this)">Múltiplos y divisores</div>
+  <div class="tarjeta subtema"subtema-id = "43" onclick="irASubtema(this)">MCD y MCM (concepto inicial)</div>
+  <div class="tarjeta subtema"subtema-id = "44" onclick="irASubtema(this)">Problemas de lógica matemática</div>
+</div>
+</div>
+
+        <div class="tarjeta tema" data-id= "3" onclick="irATema(this)" style="background-image: url('/imagenes/figuras.png');">
+        <div class="titulo-tema">Geométria</div>
+        </div>
+
+        <!-- Contenedor con scroll para subtemas de geometría -->
+
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">Figuras geométricas básicas (círculo, cuadrado, triángulo, rectángulo)</div>
+    <div class="tarjeta subtema">Identificación de formas en objetos del entorno</div>
+    <div class="tarjeta subtema">Líneas rectas y curvas</div>
+    <div class="tarjeta subtema">Líneas horizontales y verticales</div>
+    <div class="tarjeta subtema">Comparación de formas por tamaño y forma</div>
+    <div class="tarjeta subtema">Clasificación de figuras según lados y vértices</div>
+    <div class="tarjeta subtema">Sólidos geométricos (esfera, cubo, cilindro, cono)</div>
+    <div class="tarjeta subtema">Relación entre figuras planas y cuerpos geométricos</div>
+    <div class="tarjeta subtema">Características de los polígonos</div>
+    <div class="tarjeta subtema">Ángulos: recto, agudo y obtuso (nociones básicas)</div>
+    <div class="tarjeta subtema">Perímetro de figuras planas regulares</div>
+    <div class="tarjeta subtema">Simetría en figuras geométricas</div>
+    <div class="tarjeta subtema">Ubicación espacial: arriba, abajo, izquierda, derecha</div>
+    <div class="tarjeta subtema">Coordenadas en cuadrículas simples</div>
+    <div class="tarjeta subtema">Uso de instrumentos básicos: regla, escuadra y compás</div>
+  </div>
+</div>
+
+        <div class="tarjeta tema" data-id="4" onclick="irATema(this)" style="background-image: url('/imagenes/algebra.png');">
+        <div class="titulo-tema">Álgebra</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">Introducción al álgebra: letras como números</div>
+    <div class="tarjeta subtema">Expresiones algebraicas simples</div>
+    <div class="tarjeta subtema">Valor numérico de una expresión algebraica</div>
+    <div class="tarjeta subtema">Operaciones con expresiones algebraicas</div>
+    <div class="tarjeta subtema">Uso de paréntesis y leyes de los signos</div>
+    <div class="tarjeta subtema">Términos semejantes y reducción</div>
+    <div class="tarjeta subtema">Propiedades de la suma y la multiplicación</div>
+    <div class="tarjeta subtema">Monomios, binomios y polinomios</div>
+    <div class="tarjeta subtema">Multiplicación de monomios y polinomios</div>
+    <div class="tarjeta subtema">Factor común y factorización básica</div>
+    <div class="tarjeta subtema">Ecuaciones de primer grado</div>
+    <div class="tarjeta subtema">Ecuaciones con paréntesis y fracciones</div>
+    <div class="tarjeta subtema">Sistemas de ecuaciones lineales</div>
+    <div class="tarjeta subtema">Inecuaciones de primer grado</div>
+    <div class="tarjeta subtema">Expresiones algebraicas con exponentes</div>
+    <div class="tarjeta subtema">Leyes de los exponentes</div>
+    <div class="tarjeta subtema">Ecuaciones cuadráticas</div>
+    <div class="tarjeta subtema">Fórmula general y factorización de trinomios</div>
+    <div class="tarjeta subtema">Aplicación del álgebra en problemas cotidianos</div>
+  </div>
+</div>
+
+        <div class="tarjeta tema" data-id="5" onclick="irATema(this)" style="background-image: url('/imagenes/trigonometria.png');">
+        <div class="titulo-tema">Trigonometría</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">Ángulos: definición y clasificación</div>
+    <div class="tarjeta subtema">Sistema sexagesimal y radianes</div>
+    <div class="tarjeta subtema">Medición de ángulos (uso del transportador)</div>
+    <div class="tarjeta subtema">Ángulos complementarios y suplementarios</div>
+    <div class="tarjeta subtema">Triángulos: clasificación y propiedades</div>
+    <div class="tarjeta subtema">Razones trigonométricas en triángulos rectángulos</div>
+    <div class="tarjeta subtema">Seno, coseno y tangente</div>
+    <div class="tarjeta subtema">Cálculo de lados y ángulos usando razones trigonométricas</div>
+    <div class="tarjeta subtema">Uso de la calculadora científica en trigonometría</div>
+    <div class="tarjeta subtema">Teorema de Pitágoras</div>
+    <div class="tarjeta subtema">Teorema de seno</div>
+    <div class="tarjeta subtema">Teorema de coseno</div>
+    <div class="tarjeta subtema">Resolución de triángulos oblicuángulos</div>
+    <div class="tarjeta subtema">Aplicaciones de la trigonometría en la vida real</div>
+    <div class="tarjeta subtema">Identidades trigonométricas básicas</div>
+    <div class="tarjeta subtema">Razones trigonométricas inversas</div>
+    <div class="tarjeta subtema">Gráficas de funciones trigonométricas</div>
+  </div>
+</div>
+
+       <div class="tarjeta tema" data-id="6" onclick="irATema(this)" style="background-image: url('/imagenes/calculo.png');">
+        <div class="titulo-tema">Cálculo Diferencial</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">Concepto de variable y función</div>
+    <div class="tarjeta subtema">Dominio y rango de una función</div>
+    <div class="tarjeta subtema">Tipos de funciones: lineales, cuadráticas, racionales</div>
+    <div class="tarjeta subtema">Representación gráfica de funciones</div>
+    <div class="tarjeta subtema">Pendiente de una recta</div>
+    <div class="tarjeta subtema">Razón de cambio</div>
+    <div class="tarjeta subtema">Límites de una función</div>
+    <div class="tarjeta subtema">Cálculo de límites por sustitución y factorización</div>
+    <div class="tarjeta subtema">Continuidad de una función</div>
+    <div class="tarjeta subtema">Concepto de derivada</div>
+    <div class="tarjeta subtema">Derivada como razón de cambio</div>
+    <div class="tarjeta subtema">Reglas de derivación (potencias, suma, producto, cociente)</div>
+    <div class="tarjeta subtema">Derivación de funciones polinómicas</div>
+    <div class="tarjeta subtema">Derivación de funciones racionales</div>
+    <div class="tarjeta subtema">Aplicaciones de la derivada: máximos y mínimos</div>
+    <div class="tarjeta subtema">Trazado de curvas usando derivadas</div>
+    <div class="tarjeta subtema">Problemas de optimización</div>
+    <div class="tarjeta subtema">Velocidad y aceleración como derivadas</div>
+    <div class="tarjeta subtema">Introducción a la derivada implícita</div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- FÍSICA -->
+    <section id="fisica">
+      <h2><a href="#fisica">⚛️ Física en Acción</a></h2>
+      <div class="carrusel">
+        <div class="tarjeta tema" data-id="7" onclick="irATema(this)" style="background-image: url('/imagenes/unidades.png');">
+        <div class="titulo-tema">Magnitudes y Unidades</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es una magnitud física?</div>
+    <div class="tarjeta subtema">Magnitudes fundamentales y derivadas</div>
+    <div class="tarjeta subtema">Sistema Internacional de Unidades (SI)</div>
+    <div class="tarjeta subtema">Unidades básicas: metro, kilogramo, segundo, etc.</div>
+    <div class="tarjeta subtema">Símbolos y notación de unidades</div>
+    <div class="tarjeta subtema">Instrumentos de medición</div>
+    <div class="tarjeta subtema">Precisión, exactitud y error de medición</div>
+    <div class="tarjeta subtema">Múltiplos y submúltiplos del SI (prefijos)</div>
+    <div class="tarjeta subtema">Conversión de unidades</div>
+    <div class="tarjeta subtema">Notación científica</div>
+    <div class="tarjeta subtema">Magnitudes escalares y vectoriales</div>
+    <div class="tarjeta subtema">Suma y resta de vectores</div>
+    <div class="tarjeta subtema">Representación gráfica de vectores</div>
+    <div class="tarjeta subtema">Resolución de vectores en componentes</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="8" onclick="irATema(this)" style="background-image: url('/imagenes/movimiento.png');">
+        <div class="titulo-tema"> Movimiento y Fuerzas</div>
+        </div>
+       
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">Concepto de movimiento</div>
+    <div class="tarjeta subtema">Sistema de referencia</div>
+    <div class="tarjeta subtema">Trayectoria y desplazamiento</div>
+    <div class="tarjeta subtema">Distancia y desplazamiento</div>
+    <div class="tarjeta subtema">Rapidez y velocidad</div>
+    <div class="tarjeta subtema">Aceleración</div>
+    <div class="tarjeta subtema">Movimiento rectilíneo uniforme (MRU)</div>
+    <div class="tarjeta subtema">Gráficas de MRU</div>
+    <div class="tarjeta subtema">Movimiento rectilíneo uniformemente acelerado (MRUA)</div>
+    <div class="tarjeta subtema">Fórmulas del MRUA</div>
+    <div class="tarjeta subtema">Gráficas de MRUA</div>
+    <div class="tarjeta subtema">Caída libre</div>
+    <div class="tarjeta subtema">Tiro vertical</div>
+    <div class="tarjeta subtema">Tiro parabólico (introducción)</div>
+    <div class="tarjeta subtema">Concepto de fuerza</div>
+    <div class="tarjeta subtema">Fuerza neta y equilibrio</div>
+    <div class="tarjeta subtema">Primera Ley de Newton (inercia)</div>
+    <div class="tarjeta subtema">Segunda Ley de Newton (f = m·a)</div>
+    <div class="tarjeta subtema">Tercera Ley de Newton (acción y reacción)</div>
+    <div class="tarjeta subtema">Fuerza de fricción</div>
+    <div class="tarjeta subtema">Fuerza normal</div>
+    <div class="tarjeta subtema">Peso y masa</div>
+    </div>
+  </div>
+<div class="tarjeta tema" data-id="9" onclick="irATema(this)" style="background-image: url('/imagenes/energia.png');">
+        <div class="titulo-tema"> Energía y Trabajo</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es el trabajo en física?</div>
+    <div class="tarjeta subtema">Fórmula del trabajo (W = F·d·cosθ)</div>
+    <div class="tarjeta subtema">Unidad de trabajo: el joule</div>
+    <div class="tarjeta subtema">Trabajo positivo, negativo y nulo</div>
+    <div class="tarjeta subtema">¿Qué es la energía?</div>
+    <div class="tarjeta subtema">Energía cinética</div>
+    <div class="tarjeta subtema">Energía potencial gravitatoria</div>
+    <div class="tarjeta subtema">Energía potencial elástica</div>
+    <div class="tarjeta subtema">Conservación de la energía mecánica</div>
+    <div class="tarjeta subtema">Transformación de energía</div>
+    <div class="tarjeta subtema">Potencia mecánica (P = W/t)</div>
+    <div class="tarjeta subtema">Unidad de potencia: el watt</div>
+    <div class="tarjeta subtema">Máquinas simples y trabajo útil</div>
+    <div class="tarjeta subtema">Eficiencia energética</div>
+    <div class="tarjeta subtema">Energía térmica y calor (introducción)</div>
+    <div class="tarjeta subtema">Fuentes de energía renovable y no renovable</div>
+    <div class="tarjeta subtema">Impacto ambiental del consumo energético</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="10" onclick="irATema(this)" style="background-image: url('/imagenes/ondas.png');">
+        <div class="titulo-tema">Ondas y Sonido</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es una onda?</div>
+    <div class="tarjeta subtema">Elementos de una onda: cresta, valle, amplitud, etc.</div>
+    <div class="tarjeta subtema">Tipos de ondas: mecánicas y electromagnéticas</div>
+    <div class="tarjeta subtema">Ondas transversales y longitudinales</div>
+    <div class="tarjeta subtema">Características de las ondas: frecuencia, periodo, longitud de onda y velocidad</div>
+    <div class="tarjeta subtema">Ecuación de la onda: v = λ·f</div>
+    <div class="tarjeta subtema">Reflexión, refracción y difracción de ondas</div>
+    <div class="tarjeta subtema">Interferencia de ondas</div>
+    <div class="tarjeta subtema">¿Qué es el sonido?</div>
+    <div class="tarjeta subtema">Características del sonido: tono, timbre e intensidad</div>
+    <div class="tarjeta subtema">Velocidad del sonido en distintos medios</div>
+    <div class="tarjeta subtema">Efecto Doppler</div>
+    <div class="tarjeta subtema">Ultrasonido e infrasonido</div>
+    <div class="tarjeta subtema">Contaminación sonora</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="11" onclick="irATema(this)" style="background-image: url('/imagenes/luz.png');">
+        <div class="titulo-tema">Luz y Óptica</div>
+</div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es la luz?</div>
+    <div class="tarjeta subtema">Propiedades de la luz: velocidad, trayectoria y propagación</div>
+    <div class="tarjeta subtema">Fuentes de luz: naturales y artificiales</div>
+    <div class="tarjeta subtema">Luz visible e invisible</div>
+    <div class="tarjeta subtema">Reflexión de la luz</div>
+    <div class="tarjeta subtema">Leyes de la reflexión</div>
+    <div class="tarjeta subtema">Espejos planos y curvos</div>
+    <div class="tarjeta subtema">Imágenes en espejos</div>
+    <div class="tarjeta subtema">Refracción de la luz</div>
+    <div class="tarjeta subtema">Índice de refracción</div>
+    <div class="tarjeta subtema">Lentes convergentes y divergentes</div>
+    <div class="tarjeta subtema">Formación de imágenes con lentes</div>
+    <div class="tarjeta subtema">Dispersión de la luz (arcoíris)</div>
+    <div class="tarjeta subtema">Absorción, transmisión y opacidad</div>
+    <div class="tarjeta subtema">Colores de la luz</div>
+    <div class="tarjeta subtema">Fenómenos ópticos naturales (espejismos, halos, etc.)</div>
+    <div class="tarjeta subtema">Óptica en instrumentos: lupa, microscopio, telescopio</div>
+  </div>
+</div>
+
+
+<div class="tarjeta tema" data-id="12" onclick="irATema(this)" style="background-image: url('/imagenes/electricidad.png');">
+        <div class="titulo-tema">Electricidad y Magnetismo</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es la electricidad?</div>
+    <div class="tarjeta subtema">Cargas eléctricas: positivas y negativas</div>
+    <div class="tarjeta subtema">Corriente eléctrica: definición y tipos</div>
+    <div class="tarjeta subtema">Conductores y aislantes</div>
+    <div class="tarjeta subtema">Tensión o voltaje</div>
+    <div class="tarjeta subtema">Resistencia eléctrica</div>
+    <div class="tarjeta subtema">Ley de Ohm (V = I·R)</div>
+    <div class="tarjeta subtema">Potencia eléctrica (P = V·I)</div>
+    <div class="tarjeta subtema">Circuitos eléctricos: abiertos y cerrados</div>
+    <div class="tarjeta subtema">Componentes básicos del circuito: pila, bombilla, interruptor</div>
+    <div class="tarjeta subtema">Circuitos en serie y en paralelo</div>
+    <div class="tarjeta subtema">Seguridad eléctrica</div>
+    <div class="tarjeta subtema">¿Qué es el magnetismo?</div>
+    <div class="tarjeta subtema">Polos magnéticos: atracción y repulsión</div>
+    <div class="tarjeta subtema">Campo magnético</div>
+    <div class="tarjeta subtema">Interacción entre electricidad y magnetismo</div>
+    <div class="tarjeta subtema">Electroimán: cómo se forma</div>
+    <div class="tarjeta subtema">Motor eléctrico: funcionamiento básico</div>
+    <div class="tarjeta subtema">Generador eléctrico</div>
+    <div class="tarjeta subtema">Aplicaciones cotidianas de la electricidad y el magnetismo</div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- QUÍMICA -->
+    <section id="quimica">
+     <h2><a href="#quimica">🧪 Química Divertida</a></h2>
+      <div class="carrusel">
+        <div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/materia.png');">
+        <div class="titulo-tema">Materia y sus Propiedades</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es la materia?</div>
+    <div class="tarjeta subtema">Estados de la materia: sólido, líquido y gaseoso</div>
+    <div class="tarjeta subtema">Cambios de estado de la materia</div>
+    <div class="tarjeta subtema">Propiedades generales de la materia (masa, volumen, densidad)</div>
+    <div class="tarjeta subtema">Propiedades específicas de la materia (punto de ebullición, punto de fusión, conductividad)</div>
+    <div class="tarjeta subtema">Clasificación de la materia: sustancias puras y mezclas</div>
+    <div class="tarjeta subtema">Elementos, compuestos y mezclas</div>
+    <div class="tarjeta subtema">Propiedades físicas vs propiedades químicas</div>
+    <div class="tarjeta subtema">Cambios físicos y cambios químicos</div>
+    <div class="tarjeta subtema">Identificación de cambios químicos (color, olor, gas, precipitado, temperatura)</div>
+    <div class="tarjeta subtema">La materia y su importancia en la vida diaria</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/mezclas.png');">
+        <div class="titulo-tema">Mezclas y Soluciones</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es una mezcla?</div>
+    <div class="tarjeta subtema">Tipos de mezclas: homogéneas y heterogéneas</div>
+    <div class="tarjeta subtema">Ejemplos comunes de mezclas</div>
+    <div class="tarjeta subtema">Métodos de separación de mezclas (decantación, filtración, tamizado, etc.)</div>
+    <div class="tarjeta subtema">¿Qué es una solución?</div>
+    <div class="tarjeta subtema">Soluto y disolvente</div>
+    <div class="tarjeta subtema">Solubilidad: factores que influyen</div>
+    <div class="tarjeta subtema">Tipos de soluciones: diluidas, concentradas y saturadas</div>
+    <div class="tarjeta subtema">Ejemplos de soluciones en la vida diaria</div>
+    <div class="tarjeta subtema">Diferencias entre mezcla y solución</div>
+    <div class="tarjeta subtema">Importancia de las mezclas y soluciones en la vida cotidiana</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/atomo.png');">
+        <div class="titulo-tema">Átomos y Moléculas</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es un átomo?</div>
+    <div class="tarjeta subtema">Partes del átomo: protón, neutrón y electrón</div>
+    <div class="tarjeta subtema">Número atómico y masa atómica</div>
+    <div class="tarjeta subtema">Modelos atómicos históricos (Dalton, Thomson, Rutherford, Bohr)</div>
+    <div class="tarjeta subtema">¿Qué es una molécula?</div>
+    <div class="tarjeta subtema">Formación de moléculas: enlaces químicos básicos</div>
+    <div class="tarjeta subtema">Moléculas simples y compuestas</div>
+    <div class="tarjeta subtema">Diferencias entre átomos, elementos y moléculas</div>
+    <div class="tarjeta subtema">Representación de moléculas: fórmulas químicas</div>
+    <div class="tarjeta subtema">Moléculas comunes en la vida cotidiana (agua, oxígeno, dióxido de carbono)</div>
+    <div class="tarjeta subtema">Importancia de átomos y moléculas en la química y la vida diaria</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/tabla.png');">
+        <div class="titulo-tema">Tabla Periódica</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es la tabla periódica?</div>
+    <div class="tarjeta subtema">Historia de la tabla periódica</div>
+    <div class="tarjeta subtema">Organización de la tabla periódica</div>
+    <div class="tarjeta subtema">Grupos o familias químicas</div>
+    <div class="tarjeta subtema">Periodos de la tabla periódica</div>
+    <div class="tarjeta subtema">Metales, no metales y metaloides</div>
+    <div class="tarjeta subtema">Elementos representativos y de transición</div>
+    <div class="tarjeta subtema">Símbolos químicos y número atómico</div>
+    <div class="tarjeta subtema">Propiedades periódicas: electronegatividad, radio atómico, energía de ionización</div>
+    <div class="tarjeta subtema">Ubicación de elementos comunes en la tabla</div>
+    <div class="tarjeta subtema">Importancia de la tabla periódica en la química</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/reacciones.png');">
+        <div class="titulo-tema">Reacciones Químicas</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué es una reacción química?</div>
+    <div class="tarjeta subtema">Características de las reacciones químicas</div>
+    <div class="tarjeta subtema">Evidencias de una reacción química (cambio de color, liberación de gas, cambio de temperatura)</div>
+    <div class="tarjeta subtema">Tipos de reacciones químicas</div>
+    <div class="tarjeta subtema">Reacciones de combinación</div>
+    <div class="tarjeta subtema">Reacciones de descomposición</div>
+    <div class="tarjeta subtema">Reacciones de sustitución</div>
+    <div class="tarjeta subtema">Reacciones de doble desplazamiento</div>
+    <div class="tarjeta subtema">Ley de conservación de la masa</div>
+    <div class="tarjeta subtema">Balanceo de ecuaciones químicas</div>
+    <div class="tarjeta subtema">Reacciones endotérmicas y exotérmicas</div>
+    <div class="tarjeta subtema">Aplicaciones de las reacciones químicas en la vida cotidiana</div>
+  </div>
+</div>
+
+<div class="tarjeta tema" data-id="1" onclick="irATema(this)" style="background-image: url('/imagenes/acidos.png');">
+        <div class="titulo-tema">Ácidos y Bases</div>
+        </div>
+        
+  <div class="subtarjetas">
+    <div class="contenedor-scroll">
+    <div class="tarjeta subtema">¿Qué son los ácidos?</div>
+    <div class="tarjeta subtema">Propiedades de los ácidos</div>
+    <div class="tarjeta subtema">Ejemplos comunes de ácidos (ácido clorhídrico, ácido sulfúrico, vinagre)</div>
+    <div class="tarjeta subtema">¿Qué son las bases?</div>
+    <div class="tarjeta subtema">Propiedades de las bases</div>
+    <div class="tarjeta subtema">Ejemplos comunes de bases (hidróxido de sodio, amoníaco)</div>
+    <div class="tarjeta subtema">Teoría de los ácidos y bases de Arrhenius</div>
+    <div class="tarjeta subtema">Teoría de los ácidos y bases de Brønsted-Lowry</div>
+    <div class="tarjeta subtema">Teoría de Lewis sobre ácidos y bases</div>
+    <div class="tarjeta subtema">Escala de pH: qué es y cómo se mide</div>
+    <div class="tarjeta subtema">Ácidos y bases en la vida cotidiana</div>
+    <div class="tarjeta subtema">Neutralización de ácidos y bases</div>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </main>
+  <script src="js/subtema.js"></script>
+</body>
+</html>

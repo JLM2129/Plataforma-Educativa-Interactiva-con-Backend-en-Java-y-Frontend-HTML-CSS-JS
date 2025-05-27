@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Química Básica | 🔬 Ciencia Loca</title>
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+
+  <section class="tema">
+    <div class="logo"><img src="/logo.jpg" alt="Logo"></div>
+    <div class="titulo-seccion">
+      <h2>🔬 Materia y sus propiedades</h2>
+      <p>Explora los fundamentos de la química de forma divertida y educativa.</p>
+    </div>
+
+    <div class="contenedor-contenido">
+      <!-- Tema: Materia y sus propiedades -->
+      <div class="bloque">
+        <h3>🎥 Video: Materia y sus propiedades</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/kxNL9ZoQqCY" title="Materia y sus propiedades" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+      </div>
+
+      <div class="bloque">
+        <h3>✍️ Ejercicio: Materia y sus propiedades</h3>
+        <p id="pregunta-materia"></p>
+        <input type="text" id="respuesta-materia" placeholder="Tu respuesta">
+        <button onclick="verificarRespuestaMateria()">Comprobar</button>
+        <p id="feedback-materia"></p>
+        <button onclick="accesoDenegado()">Ver más ejercicios</button>
+      </div>
+
+      <div class="bloque">
+        <h3>🎮 Juego: ¿Falso o Verdadero?</h3>
+        <p id="enunciado-fv">"Aquí irá la afirmación"</p>
+        <button onclick="responderFV(true)">Verdadero</button>
+        <button onclick="responderFV(false)">Falso</button>
+        <p id="resultado-fv"></p>
+        <button onclick="accesoDenegado()">Ver más juegos</button>
+      </div>
+      
+      
+
+      <div class="bloque">
+        <h3>📚 PDF: Materia y sus propiedades</h3>
+        <a href="pdfs/materia-propiedades.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+        <button onclick="accesoDenegado()">Ver más guías</button>
+      </div>
+    </div>
+    </section>
+    <section class="tema">
+      <!-- Tema: Mezclas y soluciones -->
+      <div class="titulo-seccion">
+        <h2 id="mezclas">🥛 Mezclas y Soluciones</h2>
+        <p>Descubre cómo se combinan las sustancias y cómo se pueden separar.</p>
+      </div>
+      <div class="contenedor-contenido">
+      <div class="bloque">
+        <h3>🎥 Video: Mezclas y soluciones</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/F2lij0vNQMg" title="Mezclas y soluciones" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+      </div>
+
+      <div class="bloque">
+        <h3>✍️ Ejercicio: Mezclas y soluciones</h3>
+        <p id="pregunta-mezcla"></p>
+        <input type="text" id="respuesta-mezcla" placeholder="Tu respuesta">
+        <button onclick="verificarRespuestaMezcla()">Comprobar</button>
+        <p id="feedback-mezcla"></p>
+        <button onclick="accesoDenegado()">Ver más ejercicios</button>
+      </div>
+
+      <div class="bloque">
+        <h3>🎮 Juego: Pregunta de opción múltiple</h3>
+        <p id="pregunta-opcion"></p>
+        <div id="opciones"></div>
+        <p id="resultado-opcion"></p>
+        <button onclick="accesoDenegado()">Ver más juegos</button>
+      </div>
+
+      <div class="bloque">
+        <h3>📚 PDF: Mezclas y soluciones</h3>
+        <a href="pdfs/mezclas-soluciones.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+        <button onclick="accesoDenegado()">Ver más guías</button>
+      </div>
+      </div>
+  </section>
+
+  <script type="module" src="/js/quimica-basica.js"></script>
+</body>
+</html>

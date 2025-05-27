@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Matemáticas Básicas|🔬Ciencia loca</title>
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+ 
+  <section class="tema">
+    <div class="logo" ><img src ="/logo.jpg" alt="logo"></div>
+    <div class="titulo-seccion">
+      <h2>🔢 Matemáticas Básicas</h2>
+      <p>¡Aprende jugando y diviértete con los números!</p>
+    </div>
+
+    <div class="contenedor-contenido">
+      <!-- Videos -->
+      <div class="bloque videos">
+        <h3>🎥 Videos Explicativos</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/HfGxXf9D_c8" title="Video explicativo" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+      </div>
+      
+
+      <!-- EJERCICIOS INTERACTIVOS -->
+     <div class="bloque ejercicios">
+     <h3>✍️ Ejercicios Interactivos</h3>
+     <p>¿Cuánto es <span id="num1"></span> + <span id="num2"></span>?</p>
+     <input type="number" id="respuesta" placeholder="Tu respuesta">
+     <button onclick="verificarRespuesta()">Comprobar</button>
+     <p id="feedback"></p>
+     <button onclick="accesoDenegado()">Ver más ejercicios</button>
+</div>
+
+<!-- JUEGOS MATEMÁTICOS -->
+<div class="bloque juegos">
+  <h3>🎮 Juegos Matemáticos</h3>
+  <p>¿Cuál de estos números es par?</p>
+  <div id="opcionesJuego" class="botones-juego"></div>
+  <p id="resultadoJuego"></p>
+  <button onclick="accesoDenegado()">Ver más juegos</button>
+</div>
+
+<!-- PDFS DESCARGABLES -->
+<div class="bloque pdfs">
+  <h3>📚 PDFs Descargables</h3>
+  <a href="pdfs/numeros-operaciones.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+  <button onclick="accesoDenegado()">Ver más guías</button>
+</div>
+
+    </div>
+  </section>
+
+  <section class="tema">
+    <div class="titulo-seccion">
+      <h2 id="figuras">📐 Figuras Geométricas</h2>
+      <p>Aprende sobre formas como el círculo, el triángulo, el cuadrado y otras figuras básicas de forma divertida.</p>
+    </div>
+  
+    <div class="contenedor-contenido">
+  
+      <!-- Tarjeta: Videos Explicativos -->
+      <div class="bloque">
+        <h3>🎥 Videos Explicativos</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/tu_video_id1" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+      </div>
+  
+      <!-- Tarjeta: Ejercicios Interactivos -->
+      <div class="bloque ejercicio-figura">
+        <h3>✍️ Ejercicios Interactivos</h3>
+        <p id="pregunta-figura"></p>       
+        <input type="text" id="respuesta-figura" />
+        <button onclick="comprobarRespuestaFigura()">Verificar</button>
+        <p id="mensaje-figura"></p>
+        <button onclick="accesoDenegado()">Ver más ejercicios</button>
+      </div>
+  
+      <!-- Tarjeta: Juegos Matemáticos -->
+      <div class="bloque juego-figura">
+        <h3>🎮 Juegos con figuras geometricas</h3>
+        <p>¿Cuál de estas figuras tiene 3 lados?</p>
+        <div id="opciones-figura"></div>
+        <p id="resultado-juego"></p>
+        <button onclick="accesoDenegado()">Ver más juegos</button>
+      </div>
+      
+  
+      <!-- Tarjeta: PDFs Descargables -->
+      <div class="bloque pdfs">
+        <h3>📚 PDFs Descargables</h3>
+        <a href="figuras-geometricas.pdf" class="recurso-btn" download>📄 Descargar guía en PDF</a>
+        <button onclick="accesoDenegado()">Ver más guías</button>
+      </div>
+  
+    </div>
+  </section>
+  <script type="module" src="/js/basicas.js"></script>
+  
+</body>
+</html>

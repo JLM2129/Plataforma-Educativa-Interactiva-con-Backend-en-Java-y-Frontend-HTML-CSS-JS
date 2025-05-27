@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo Diferencial |🔬Ciencia Loca</title>
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+  <section class="tema">
+    <div class="logo"><img src="/logo.jpg" alt="logo"></div>
+    <div class="titulo-seccion">
+      <h2>Cálculo Diferencial 🧮</h2>
+      <p>Conceptos básicos de límites, derivadas y su aplicación.</p>
+    </div>
+    <div class="contenedor-contenido">
+
+      <div class="bloque videos">
+        <h3>🎥 Videos Explicativos</h3>
+        <div class="video-responsive">
+          <iframe src="https://www.youtube.com/embed/HfGxXf9D_c8" title="Video explicativo" allowfullscreen></iframe>
+        </div>
+        <button onclick="accesoDenegado()">Ver más videos</button>
+      </div>
+
+      <div class="bloque ejercicios" id="ejercicios">
+        <h3>✍️ Ejercicios Interactivos</h3>
+        <p>Resuelve: <span id="expresionCalculo"></span></p>
+        <input type="text" id="respuestaCalculo" placeholder="Tu respuesta">
+        <button onclick="verificarRespuestaCalculo()">Comprobar</button>
+        <p id="feedbackCalculo"></p>
+        <button onclick="accesoDenegado()">Ver más ejercicios</button>
+      </div>
+
+      <div class="bloque juegos">
+        <h3>🎮 Juego Interactivo</h3>
+        <p>Resuelve tantas derivadas como puedas en 30 segundos ⏱️</p>
+        <p id="juegoPregunta"></p>
+        <div id="opcionesJuego"></div>
+        <p id="resultadoJuegoCalculo"></p>
+        <p id="juegoPuntaje">Puntaje: 0</p>
+        <button id="botonIniciarJuego" onclick="iniciarJuego()">Iniciar Juego</button>
+        <button onclick="accesoDenegado()">Ver más juegos</button>
+      </div>
+      
+      
+      
+      
+
+      <div class="bloque pdfs">
+        <h3>📚 Descarga PDF</h3>
+        <p>Descarga nuestra guía de cálculo diferencial para practicar offline:</p>
+        <a href="guia_calculo_diferencial.pdf" download class="boton">Descargar PDF</a>
+        <button onclick="accesoDenegado()">Ver más guias</button>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/js/calculo.js"></script>
+</body>
+</html>

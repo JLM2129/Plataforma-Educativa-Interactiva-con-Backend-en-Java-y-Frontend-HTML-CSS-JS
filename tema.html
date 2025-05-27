@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tema - Ciencia Loca</title>
+  <link rel="stylesheet" href="subtema.css" />
+</head>
+<body>
+
+  <header class="encabezado">
+    <img class="logo" src="logo.jpg" alt="logo Ciencia Loca" />
+    
+    <h1 class = "titulo-tema " id="titulo-tema">Cargando tema...</h1>
+     <img class="imagen-tema" id="imagen" alt="Imagen del tema" />
+     
+  </header>
+
+  <main class="contenedor-tema">
+    
+    <ol id="lista-subtemas"></ol>
+  </main>
+
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const idTema = params.get("id");
+
+  async function cargarTema() {
+    try {
+      const response = await fetch(`http://localhost:8080/api/temas/${idTema}`);
+      
+      if (!response.ok) {
+        throw new Error(`Error al obtener el tema: ${response.status}`);
+      }
+
+      const tema = await response.json();
+
+      document.getElementById("titulo-tema").textContent = tema.nombre;
+      document.getElementById("imagen").src = 'imagenes/' + tema.url_imagen;
+ 
+
+
+      const lista = document.getElementById("lista-subtemas");
+      lista.innerHTML = ""; // limpia la lista por si acaso
+
+      if (tema.subtemas && Array.isArray(tema.subtemas)) {
+        tema.subtemas.forEach(sub => {
+          const li = document.createElement("li");
+
+          li.innerHTML = `
+            <a href="subtema.html?id=${sub.id}">${sub.nombre}</a>
+            <p class="descripcion-subtema">${sub.descripcion}</p>
+    
+          `;
+          lista.appendChild(li);
+        });
+      } else {
+        lista.innerHTML = "<li>No hay subtemas disponibles.</li>";
+      }
+
+    } catch (error) {
+      console.error("Error al cargar el tema:", error);
+      document.getElementById("titulo-tema").textContent = "Error al cargar el tema.";
+    }
+  }
+
+  cargarTema();
+</script>
+
+
+</body>
+</html>
