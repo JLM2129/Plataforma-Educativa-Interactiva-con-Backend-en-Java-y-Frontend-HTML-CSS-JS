@@ -64,7 +64,7 @@ Este repositorio contiene el desarrollo de una plataforma educativa interactiva 
 
 3. Abre cualquier archivo HTML en el navegador con Live Server o simplemente doble clic.
 
-# Cacturas de pantalla.
+# Capturas de pantalla.
 
 1. Pagina principal.
  ![image](https://github.com/user-attachments/assets/efac60d7-1ccf-41c1-9300-da40a23e4922)
