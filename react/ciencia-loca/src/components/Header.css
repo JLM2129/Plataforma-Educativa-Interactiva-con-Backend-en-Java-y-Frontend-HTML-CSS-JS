@@ -1,0 +1,50 @@
+.header {
+  background-color: #C8E6C9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav a {
+  background-color: #FFCC80;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #ffa726;
+}
+
+/* Botón de sonido */
+#muteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#muteBtn img {
+  width: 60px;
+  height: auto;
+}
+
+#muteLabel {
+  font-size: 12px;
+  color: #333;
+}

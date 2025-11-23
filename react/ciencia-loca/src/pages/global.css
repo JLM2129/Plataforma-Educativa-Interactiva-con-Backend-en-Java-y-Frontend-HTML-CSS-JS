@@ -1,0 +1,539 @@
+/* ------------------------------ */
+/* SECCIÓN PRINCIPAL Y TITULOS   */
+/* ------------------------------ */
+
+
+.matematicas-basicas,.fisica,.quimica,.tema{
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #FFEBEE, #E1F5FE);
+  text-align: center;
+}
+.titulo-seccion p{
+  font-family: 'Courier New', Courier, monospace;
+  font: size 2.5em; 
+}
+.titulo-seccion h2 {
+  font-size: 2.5em;
+  color: #4A148C;
+  margin-bottom: 10px;
+}
+
+.titulo-seccion p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* ------------------------------ */
+/* CONTENEDOR GENERAL             */
+/* ------------------------------ */
+
+.contenedor-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ------------------------------ */
+/* TARJETAS DE CONTENIDO (BLOQUES)
+/* ------------------------------ */
+.ejercicio-figura,
+.bloque,
+.juego-figura {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.bloque:hover {
+  background-color: #FFF3E0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ejercicio-figura h3 ,
+.bloque h3,
+.juego-figura h3{
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ------------------------------ */
+/* VIDEO EXPLICATIVO              */
+/* ------------------------------ */
+
+.video iframe {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ------------------------------ */
+/* SUBTEMA                        */
+/* ------------------------------ */
+
+.subtema {
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #e0ffe9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.subtema h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ------------------------------ */
+/* BOTONES Y ENLACES              */
+/* ------------------------------ */
+
+/* Botones dentro de bloques */
+
+
+
+
+
+.bloque a.recurso-btn,.verificar {
+  background-color: #6fa8dc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 10px auto;
+}
+
+.bloque a.recurso-btn:hover {
+  background-color: #3d85c6;
+}
+
+/* Botones generales (fuera de bloques) */
+button {
+  background-color: #ffcc80;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #26d4ff;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* INPUTS                         */
+/* ------------------------------ */
+
+input[type="number"] {
+  width: 80%;
+  padding: 8px;
+  margin: 10px auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  display: block;
+}
+
+/* ------------------------------ */
+/* RECURSOS ADICIONALES           */
+/* ------------------------------ */
+
+.recursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.recurso {
+  margin: 20px 0;
+}
+
+.recurso h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.figuras-geometricas {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #E8F5E9, #FFF3E0); /* Verde claro a naranja claro */
+  text-align: center;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  
+  background: linear-gradient(135deg, #E3F2FD, #E8EAF6);
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+body.sin-scroll {
+  overflow: hidden;
+}
+
+
+
+.figura {
+  position: absolute;
+  bottom: -100px;
+  animation: flotar 18s infinite linear;
+  opacity: 0.4;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.figura.cuadrado {
+  width: 30px;
+  height: 30px;
+  background-color: #81D4FA;
+}
+
+.figura.circulo {
+  width: 35px;
+  height: 35px;
+  background-color: #BA68C8;
+  border-radius: 50%;
+}
+
+.figura.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #FF8A65;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.explotar {
+  animation: explotar 0.5s forwards !important;
+}
+
+@keyframes explotar {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.particula {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: yellow;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.onda, .foton {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  top: -50px;
+  animation: flotar1 10s infinite linear;
+  z-index: 0;
+}
+
+.onda {
+  border: 2px solid #00f2ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.foton {
+  background: radial-gradient(circle, #fff 0%, #ffe600 60%, transparent 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ffe600;
+}
+
+@keyframes flotar1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(120vh);
+  }
+}
+.onda-senoidal {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  top: -60px;
+  z-index: 0;
+  animation: flotar1 12s linear infinite;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.onda-senoidal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30'><path d='M0,15 Q25,0 50,15 T100,15 T150,15 T200,15' stroke='%23ffcc00' fill='none' stroke-width='2'/></svg>");
+  background-repeat: repeat-x;
+  background-size: 100px 30px;
+  animation: mover-onda 2s linear infinite;
+  opacity: 0.8;
+}
+
+
+
+@keyframes mover-onda {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+
+.tubo-ensayo, .molecula {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  top: -50px;
+  animation: flotar1 10s infinite linear;
+  z-index: 0;
+}
+
+.tubo-ensayo {
+  border: 2px solid #00f2ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00f2ff;
+}
+
+.btn-accion {
+  background-color: #6fa8dc;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-accion:hover {
+  background-color: #26d4ff;
+}
+
+.btn-actividad {
+  
+  
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.btn-actividad:hover {
+  background-color: #8c76df;
+}
+
+.conceptos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.concepto {
+  padding: 10px;
+  background-color: #e0f7fa;
+  border: 1px dashed #00838f;
+  border-radius: 6px;
+  cursor: grab;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grupo {
+  width: 45%;
+  min-height: 100px;
+  min-width: 115px;
+  padding: 15px;
+  border: 2px solid #bbb;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+select {
+  background-color: #ffffff;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 6px 0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+select:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px #3498db33;
+}
+
+select:focus {
+  outline: none;
+  border-color: #e67e22;
+  box-shadow: 0 0 0 2px #e67e2233;
+}
+
+select option {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 10px;
+}
+
+option.opt-actividad {
+  background-color: #dff9fb;
+  color: #130f40;
+  font-weight: bold;
+}
+
+input.txt-actividad {
+  background-color: #ffffff;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #2c3e50;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+input.txt-actividad:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px #3498db33;
+}
+
+input.txt-actividad:focus {
+  outline: none;
+  border-color: #e67e22;
+  box-shadow: 0 0 0 2px #e67e2233;
+}
+
+.actividades {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: inherit;
+  color: #35165e;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.juegos,
+.ejercicio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  
+  
+}
+
+.juegos > div,
+.ejercicio > div {
+  flex: 1 1 300px;
+  background-color: #eef;
+  padding: 15px;
+  border-radius: 10px;
+  border: 10px solid #ccd;
+  
+}
+
+.contenido-izquierdo, .recursos-educativos {
+  font-family: inherit;
+  font-size: 30px;
+  margin: 100px 50px;
+  
+}
+
+.contenido-izquierdo>h1 {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.imagen  {
+text-align: center;
+}
+

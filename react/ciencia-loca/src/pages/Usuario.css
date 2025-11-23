@@ -1,0 +1,292 @@
+/* Reset básico */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #FFFFFF, #cbcecf);
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 40px;
+  overflow-x: hidden; /* Asegurarse de no tener desplazamiento horizontal */
+}
+
+/* Encabezado y navegación */
+.usuario-page header {
+  background: linear-gradient(135deg, #FFEBEE, #E1F5FE);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 80px;
+}
+
+ nav a {
+  color: rgb(19, 18, 18);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+ nav a:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Secciones principales */
+main {
+  padding: 2rem;
+}
+
+ section {
+  margin-bottom: 4rem;
+}
+
+ h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+}
+
+ h3 {
+  font-size: 1.3rem;
+  color: #0a0808;
+}
+
+/* Tarjetas generales */
+.tarjeta {
+  width: 240px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  background-size:300px; 
+  background-repeat: no-repeat;
+  font-size: 1rem; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 5rem;
+  background-color: #dde4f0; /* Color sólido + imagen encima */
+  border-radius: 1rem;
+  color: white;
+  margin: 0.5rem; /* Añadir espacio entre tarjetas */
+}
+
+.titulo-tema {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  background-color: #e0f2fe;
+}
+
+/* Subtemas */
+.subtema {
+  background-color: #fef9c3;
+  color: #92400e;
+  border-radius: 10px;
+  padding: 0.8rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  margin: 0.5rem; /* Añadir espacio entre tarjetas */
+}
+
+.subtema:hover {
+  background-color: #fde68a;
+  transform: translateY(-4px);
+}
+
+/* Carrusel de tarjetas horizontales para temas */
+.carrusel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background-color: #60a5fa;
+  border-radius: 4px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+  background-color: #e5e7eb;
+}
+
+/* Carrusel horizontal para subtemas */
+.subtemas-carrusel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  border-left: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.subtemas-carrusel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.subtemas-carrusel::-webkit-scrollbar-thumb {
+  background-color: #facc15;
+  border-radius: 4px;
+}
+
+.subtemas-carrusel::-webkit-scrollbar-track {
+  background-color: #fef9c3;
+}
+
+.contenedor-scroll {
+  max-height: 240px;
+  overflow-y: auto;
+  padding-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Opcional: mejora la apariencia del scroll */
+.contenedor-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contenedor-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.contenedor-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Responsividad: uso de media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  /* Tarjetas generales */
+  .tarjeta {
+    width: 100%;  /* Tarjetas ocupan todo el ancho disponible */
+    padding: 3rem; /* Reducir el padding en dispositivos pequeños */
+  }
+
+  /* Subtemas */
+  .subtema {
+    width: 100%;  /* Subtemas ocupan todo el ancho disponible */
+  }
+
+  /* Carrusel horizontal */
+  .carrusel, .subtemas-carrusel {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Contenedor scroll */
+  .contenedor-scroll {
+    max-height: 300px; /* Aumentar la altura del contenedor en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  header {
+    padding: 0.8rem;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  /* Tarjetas generales */
+  .tarjeta {
+    width: 100%;
+    padding: 2.5rem; /* Menos padding en pantallas más pequeñas */
+  }
+
+  /* Subtemas */
+  .subtema {
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #FFEBEE, #E1F5FE);
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.titulo-tema {
+  font-family: 'Courier New', Courier, monospace;
+  font: size 3.5em; 
+}
+
+.imagen-tema {
+  max-width: 7%;
+  border-radius: 10px;
+  position:absolute;
+  top: 1%;
+  left: 92%;
+}
+
+.contenedor-tema {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.0em;
+}
+
+.descripcion-subtema {
+  margin: 5px 0 15px 20px;
+  font-size: 0.95em;
+  color: #444;
+}

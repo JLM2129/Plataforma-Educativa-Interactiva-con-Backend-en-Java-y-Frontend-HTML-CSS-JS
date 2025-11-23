@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="react">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ciencia-loca.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Archivos_Atomos_TablaPeriodica.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Archivos_Atomos_TablaPeriodica_React.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
